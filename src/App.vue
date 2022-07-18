@@ -4,6 +4,9 @@
       <img src="./assets/my_unsplash_logo.svg" alt="">
       <input type="text" name="" placeholder="Search by name" id="">
       <a id="add-button" href="">Add a photo</a>
+
+      <button @click="showAdd = true">Add a photo</button>
+      <AddPictureBox  v-if="showAdd" @close="showAdd = false"/>
     </div>
     <section>
       <Colomn/>
@@ -14,12 +17,19 @@
 
 <script>
   import Colomn from './components/ColomnComponent.vue'
+  import AddPictureBox from './components/AddPictureBox.vue'
 
   export default {
     name: 'App',
     components: {
-      Colomn
-    }
+    Colomn,
+    AddPictureBox
+},
+    data(){
+      return{
+        showAdd:false,
+      }
+    },
   }
 </script>
 
