@@ -1,7 +1,7 @@
 <template>
     <div>
         <img id="pict" :src=url alt="" @mouseover="hover = true" @mouseleave="hover = false">
-        <span v-if="hover">Bonjour</span>
+        <span v-if="hover">{{name}}</span>
     </div>
     
     
@@ -10,7 +10,7 @@
 
 <script>
     export default {
-        props: ['url'],
+        props: ['url','name'],
         data() {
             return {
                 hover: false,
