@@ -24,6 +24,7 @@
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 #add-button{
   background: #3DB46D;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
@@ -31,8 +32,8 @@
   width: 137px;
   height: 55px;
 
-  /* font-family: 'Noto Sans'; */
-  /* font-style: normal; */
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 14px;
